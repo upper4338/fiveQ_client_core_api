@@ -50,4 +50,9 @@ public class ClientController {
         return new ResponseEntity<>("Successfully deleted", HttpStatus.OK);
     }
 
+    @GetMapping("/check")
+    public String checkClient() {
+        return "client-core-api is working";
+    }
+
 }

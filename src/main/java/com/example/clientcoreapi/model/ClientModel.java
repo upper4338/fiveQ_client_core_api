@@ -12,4 +12,8 @@ import javax.validation.constraints.NotNull;
 public class ClientModel {
     @NotNull
     private String clientId;
+
+    private String name;
+    private String surname;
+    private String email;
 }

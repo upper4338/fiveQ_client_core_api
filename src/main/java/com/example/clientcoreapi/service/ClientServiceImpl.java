@@ -1,5 +1,6 @@
 package com.example.clientcoreapi.service;
 
+import com.example.clientcoreapi.controller.ClientController;
 import com.example.clientcoreapi.model.ClientModel;
 import org.springframework.stereotype.Service;
 
@@ -14,9 +15,20 @@ public class ClientServiceImpl implements ClientService {
 
     static {
         ClientModel c1 = new ClientModel(
-                UUID.randomUUID().toString()
+                "1",
+                "client 1",
+                "client 1",
+                "client1@email.com"
         );
         clientMap.put(c1.getClientId(), c1);
+
+        ClientModel c2 =  new ClientModel(
+                "2",
+                "client 2",
+                "client 2",
+                "client2@email.com"
+        );
+        clientMap.put(c2.getClientId(), c2);
     }
 
     @Override
